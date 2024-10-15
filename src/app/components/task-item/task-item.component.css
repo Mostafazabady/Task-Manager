@@ -1,0 +1,13 @@
+.task-item {
+  padding: 8px;
+  margin: 5px 0;
+  border: 2px double #707354;
+  cursor: pointer;
+  border-radius: 30px;
+  min-width: min-content;
+}
+
+.task-item.completed {
+  background-color: #238eb5;
+  text-decoration: line-through;
+}

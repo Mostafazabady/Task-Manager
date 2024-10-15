@@ -1,0 +1,51 @@
+.container-list ul {
+    list-style-type:none !important;;
+  }
+  
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.container-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.list-items {
+  flex: 1; /* تجعل قائمة المهام تأخذ المساحة المتاحة */
+  min-width: 300px; /* أقل عرض لقائمة المهام */
+}
+
+
+.list-img {
+  flex: 1; /* تجعل الصورة تأخذ المساحة المتاحة */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-img img {
+  max-width: 60%; 
+  height: auto; /* تحافظ على النسبة بين العرض والارتفاع */
+  border-radius: 50%; 
+  object-fit: cover; /* تضمن عدم تمدد الصورة بشكل غير متناسب */
+}
+
+/* تحسين التنسيق للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .container-list {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  img {
+    display: none;
+  }
+}
